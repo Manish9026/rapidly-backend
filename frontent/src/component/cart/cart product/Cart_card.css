@@ -1,0 +1,49 @@
+.card-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(122, 122, 240);
+  justify-content: flex-start;
+}
+.card-section .left {
+  position: relative;
+  padding: 10px;
+  left: 20px;
+  background-color: #3fcdf4;
+  height: 80%;
+  width: 200px;
+  margin: 10px;
+}
+.card-section .left img {
+  width: 100%;
+  height: 100%;
+}
+.card-section .right {
+  position: relative;
+  background-color: #831515;
+  width: 380px;
+  height: 80%;
+  margin: 10px;
+}
+.card-section .right .product-specification {
+  padding: 30px 20px;
+}
+.card-section .right .product-price {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.card-section .right .product-price p {
+  display: inline;
+  padding: 0px 20px;
+}
+.card-section .right .product-price select {
+  border-radius: 5px;
+  width: 60px;
+  height: 100%;
+  font-size: 0.9rem;
+  padding: 5px 5px;
+}
+.card-section .right .product-brand {
+  padding: 30px 20px;
+}/*# sourceMappingURL=Cart_card.css.map */

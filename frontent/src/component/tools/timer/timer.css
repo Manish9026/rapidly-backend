@@ -1,0 +1,48 @@
+
+.otp-section-btn{
+    box-shadow:inset 1px 1px 2px 0px rgb(52, 114, 248), inset -1px -1px 2px 0px whitesmoke;
+    padding: 5px 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-section{
+  gap: .5rem;
+    .resend-btn{
+
+    }
+
+    .cirular-process-bar{
+        transition: 2s linear;
+       
+       /* background-color: #fff; */
+.outer-circle{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* rgba(233, 42, 20, 0.895) */
+    /* rgb(10, 247, 57)  */
+    border-radius: 50%;
+    background:conic-gradient(rgb(45, 48, 238) 300deg,rgba(128, 128, 128, 0) 0deg);
+    transition: 2s linear;
+    box-shadow: 1px 1px 4px 0px rgb(105, 130, 231), -1px -1px 4px 0px rgb(105, 130, 231);
+.inner-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+border-radius: 50%;
+    background-color:rgb(90, 90, 236);
+    .timer{
+        font-size: 10px;
+        font-weight: 620;
+        color: #f4bde6;
+    }
+}
+}
+
+    }
+}

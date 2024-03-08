@@ -1,0 +1,459 @@
+@import '../../css-configration/mixins.scss';
+
+.transition {
+    transition: 1s ease;
+}
+
+.active:active {
+    // transition:1s ease ;
+    scale: .9;
+
+}
+
+.Checkout-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    .heading{
+        background-color: rgb(131, 131, 238);
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        max-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        text-transform: capitalize;
+        img{
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }
+
+    .checkout-container {
+        display: flex;
+        margin: 0 auto;
+        // justify-content: center;
+        padding: 10px 20px;
+        gap: 10px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px 2px gray;
+        max-width: 1485px;
+        width: 100%;
+        height: 100%;
+
+        .checkout-subContainer {
+
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            // padding: 10px 30px ;
+            // max-width: 800px;
+            
+
+            .login-container,
+.login-container * {
+  box-sizing: border-box;
+}
+.login-container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  height: 83px;
+  position: relative;
+  overflow: hidden;
+
+
+  .header-container {
+    background: #7b87f1;
+    padding: 7px 13px 7px 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    .login {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+      }
+  }
+  .login-body {
+    background: linear-gradient(
+      180deg,
+      rgba(238, 225, 225, 0.55) 0%,
+      rgba(0, 0, 0, 0.55) 100%
+    );
+    padding: 0px 18px 0px 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    .user-detail {
+        padding: 8px 0px 8px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .text-styles{
+        color: #000000;
+        text-align: left;
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 520;
+        position: relative;
+        text-transform: capitalize;
+      }
+   
+      .change-btn {
+        background: #2063e5;
+        border-radius: 10px;
+        padding: 10px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        // width: 9;
+        height: 35px;
+        position: relative;
+        overflow: hidden;
+      }
+      .change {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        position: relative;
+      }
+      
+  }
+
+}
+
+
+
+
+
+
+            .userAddress {
+
+
+                ul {
+                    li {
+                        padding: 10px 30px;
+                        position: relative;
+                        height: 50px;
+                        border-bottom: 1px solid rgb(41, 39, 39);
+                        background-color: #7f7979;
+
+                        .radio{
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            right:20px;
+                            border-radius: 50%;
+                            // top: 50%;
+                            background-color: #fff;
+                           
+                        }
+                        .circle{
+                            
+                            position: absolute;
+                            padding: 5px;
+                            transform: translate(50%,50%);
+                            background-color: red;
+                            border-radius: 50%;
+                        }
+
+                    }
+                }
+
+                .new-address {
+                    padding: 10px 30px;
+                    height: 50px;
+                    background-color: rgb(173, 173, 247);
+
+                }
+
+                .select-adrs{
+                    flex-direction: column;
+                    li{
+                        padding: 10px 20px;
+                        height: max-content;
+                        justify-content: center;
+                    }
+                    button{
+                        position: relative;
+                        width: 100%;
+                        max-width: 300px;
+                        border-radius: 5px;
+                        padding: 10px;
+                        border: none;
+                        // left: calc(50% - 40px);
+                    }
+                    p{
+                        color: white;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .user-order-summary {
+
+                .product-detail {
+                    background-color: #9cc4d3;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    padding: 10px 20px;
+                    gap: 10px;
+                    margin-bottom: 20px;
+
+                    img {
+                        padding: 5px;
+                        background-color: #debdbd;
+                        width: 100px;
+                        height: 100px;
+
+                    }
+
+                    .product-content {
+                        padding: 10px 20px;
+                        background-color: #e99b9b;
+                        width: 500px;
+
+                    }
+
+                    .control-bar {
+                        display: flex;
+                        gap: 20px;
+                        padding: 10px 0px;
+
+                        .quantity-section {
+                            display: inline-flex;
+                            gap: 5px;
+
+                            span {
+                                padding: 2px 30px;
+                                border-radius: 10px;
+                                outline: .01px blue solid;
+                                border: 1px solid gray;
+                            }
+
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                // padding: 05px 10px;
+                                border-radius: 50%;
+                                background-color: #baafaf;
+                            }
+                        }
+
+                        .remove-btn {
+
+                            padding: 5px 20px;
+                            border-radius: 10px;
+                            color: white;
+                            background-color: rgb(71, 71, 119);
+                        }
+
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        .price-container{
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .price-detail-section {
+            position: sticky;
+            top: 80px;
+            // max-width: 400px;
+            width:100% ;
+            // padding: 20px;
+            height: max-content;
+            list-style: none;
+            background-color: #3193dd;
+
+            @include sm {
+
+                width: 90%;
+                margin: auto;
+
+            }
+
+            .price-amount-section {
+                .heading {
+                    padding: 20px 0px 0px 20px;
+
+                }
+
+                .amount-section {
+                    display: flex;
+
+                    justify-content: space-between;
+
+                    ul {
+                        padding: 0px 40px 0px 20px;
+
+
+                        list-style: none;
+
+                        li {
+                            margin: 10px 0px;
+                        }
+
+                    }
+                }
+
+
+
+            }
+
+            .checkout-btn {
+                gap: 10px;
+                justify-content: flex-end;
+
+                ul {
+                    align-items: center;
+
+                    list-style: none;
+                    padding: 10px 40px 10px 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                button {
+                    position: relative;
+                    right: -160px;
+                    margin: 10px;
+                    width: 100px;
+                    border: .2px solid gray;
+                    border-radius: 10px;
+                    height: 40px;
+
+                }
+
+                :nth-child(3):hover {
+                    transition: all 2s ease;
+                    cursor: pointer;
+                    color: white;
+
+                    background-image: linear-gradient(to right, blue, pink);
+
+                }
+
+
+            }
+        }
+
+        .mobile-footer-nav{
+            display: none;
+        }
+    }
+
+
+    // mobile css of  checkout component
+
+    @include sm {
+        // flex-wrap: wrap;
+        height: max-content;
+        padding: 0;
+
+        .checkout-container {
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+
+            .checkout-subContainer {
+                gap: 5px;
+                min-width: 200px;
+                width: 100%;
+                .login-container{
+
+                  
+                }
+                .userAddress{
+
+                }
+
+                .user-order-summary{
+                    border: #000000 1px solid;
+                }
+
+            }
+
+            .price-container {
+                display:none;
+            }
+
+            .mobile-footer-nav {
+                display: inline-flex;
+                width: 100%;
+                position: fixed;
+                z-index: 10;
+                // padding: 10px;
+                bottom: 65px;
+
+                background-color: #975959;
+
+                button {
+                    width: 50%;
+                    height: 40px;
+
+                }
+
+                :nth-child(1) {
+                    box-shadow: inset 1px 1px 8px 0px rgb(247, 246, 246), inset -1px -1px 8px 0px rgb(247, 246, 246);
+                    background-color: #a6a9d9;
+                }
+
+                :nth-child(2) {
+                    background-color: yellow;
+
+                }
+            }
+        }
+    }
+}

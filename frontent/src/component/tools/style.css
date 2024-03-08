@@ -1,0 +1,68 @@
+.failed {
+  border: rgb(228, 21, 21) 2px double;
+}
+@media screen and (max-width: 630px) {
+  .failed {
+    box-shadow: 0px 0px 5px 3px rgb(211, 34, 7);
+  }
+}
+
+.success {
+  border: rgb(9, 152, 7) 2px double;
+}
+@media screen and (max-width: 630px) {
+  .success {
+    box-shadow: 0px 0px 4px 2px green;
+  }
+}
+
+.message-section {
+  position: absolute;
+  top: 20px;
+  width: 70%;
+  background-color: rgb(189, 174, 174);
+  height: 30px;
+}
+@media screen and (max-width: 630px) {
+  .message-section {
+    border-radius: 10px;
+    padding-left: 2px;
+    width: 80%;
+    top: 5px;
+  }
+}
+.message-section .icon_success {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: rgb(21, 123, 21);
+}
+.message-section .icon_failed {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: rgb(244, 77, 11);
+}
+.message-section .message {
+  display: flex;
+  background-color: rgba(204, 221, 204, 0.6);
+  height: 100%;
+  align-items: center;
+  padding-left: 20px;
+  width: 90%;
+}
+@media screen and (max-width: 630px) {
+  .message-section .message {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+#none {
+  display: none;
+}
+
+#block {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

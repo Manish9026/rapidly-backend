@@ -1,0 +1,66 @@
+.n-tf-10,
+.n-tf-10 * {
+  box-sizing: border-box;
+}
+.n-tf-10 {
+  background: rgba(249, 244, 244, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.img-box {
+  flex-shrink: 0;
+  width: 38.09px;
+  height: 35.25px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.txt-box {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+.home-btn {
+    transition: ease 1s;
+  background: radial-gradient(
+    closest-side,
+    rgba(242, 19, 246, 1) 0%,
+    rgba(11, 6, 245, 0.57) 72.5818395614624%
+  );
+  padding: 7px 17px 7px 17px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.home-btn:active{
+    scale: .8;
+}
+.link-txt {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  width: 73px;
+  height: 14px;
+}

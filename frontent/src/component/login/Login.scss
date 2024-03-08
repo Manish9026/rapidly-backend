@@ -1,0 +1,434 @@
+@import '../../css-configration/mixins.scss';
+
+
+/* user defined call start */
+.font1 {
+    font-size: 1.2rem;
+    color: rgba(44, 10, 10, .9);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.link {
+    display: inline;
+    transition: .5s linear;
+
+
+
+}
+
+.link:hover {
+    text-decoration: underline;
+
+}
+
+
+.--btn {
+    position: absolute;
+
+    bottom: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    left: 22%;
+    width: 200px;
+    background-color: #be3892;
+
+}
+
+
+.none {
+    display: none;
+}
+
+
+/* pre defined call end */
+.login_section {
+    position: relative;
+    height: 100vh;
+    z-index: 5;
+    width: 100vw;
+    display: flex;
+    color: black;
+    overflow: hidden;
+    background-color: rgba(219, 225, 233, 0.5);
+    justify-content: center;
+
+
+
+    .login_wrapper {
+        position: relative;
+        /* padding: 20px; */
+        color: black;
+        height: 400px;
+        margin: auto;
+        background-image: linear-gradient(to top right, rgb(37, 37, 197), grey);
+        width: 350px;
+        border-radius: 10px;
+
+        // top-wrapper csss------------------>
+        .--heading {
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            text-align: center;
+        }
+
+        .font-color_change_icon {
+            position: absolute;
+            right: 50px;
+            top: 6px;
+            color: rgb(88, 81, 87);
+
+            font-size: 1.7rem;
+
+        }
+
+        .back-color_change_icon {
+            position: absolute;
+            right: 10px;
+            top: 6px;
+            color: rgba(12, 56, 122, .6);
+            /* background-image:linear-gradient( to bottom right,rgb(37, 37, 197),grey); */
+
+            font-size: 1.5rem;
+
+        }
+
+        .top_wrapper {
+            position: relative;
+            height: 30%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                position: relative;
+               width: 100px;
+               height: 80px;
+            }
+
+            h3 {
+                position: relative;
+                top: 5px;
+                left: -10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              
+                font-style: italic;
+                font-weight: 700;
+                // line-height: -200px;
+
+                color: rgb(250, 57, 153);
+
+                margin: 0;
+
+            }
+        }
+
+        // end top-wrapper csss------------------>
+
+        // mid-wrapper css----------------------->
+        .mid_wrapper {
+            position: relative;
+            width: 100%;
+            /* padding: 20px 20px;  */
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 50%;
+            border-bottom: 3px solid rgb(221, 30, 30);
+
+            /* background-color: #fff; */
+            .input_field {
+                display: inline-flex;
+               
+                position: relative;
+                left: 40px;
+                width: 250px;
+                height: 50px;
+                /* background-color: #29ec10; */
+
+               
+                select {
+                 
+                    width: 60px;
+                    padding: 10px;
+                    font-size: 15px;
+                    border-radius: 10px 0px 0px 10px;
+                    background-color: rgba(82, 137, 199, .5);
+                    height: 100%;
+                    border-right: 3px solid gray;
+                    
+                }
+                select::-ms-expand{
+                    display:none
+                }
+
+            }
+
+            .number {
+                position: relative;
+               
+                height: 100%;
+                width: 200px;
+                padding: 0px 20px;
+                background-color: rgba(82, 137, 199, .5);
+                border-radius: 0px 10px 10px 0px;
+
+            }
+
+            .checkbox-section {
+                position: relative;
+                left: 50px;
+                top: 10px;
+
+
+
+                .check {
+
+                    transform: scale(1.2);
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+
+            }
+
+        }
+
+        .method1 {
+            // padding-top: 25px;
+            padding: 20px 20px;
+gap:30px;
+// background-color: #fff;
+.input-container{
+    display: flex;
+    padding: 5px 20px;
+    flex-direction: column;
+    // gap: 5px;
+    
+    justify-content: center;
+    align-items: center;
+    // background-color: #fff;
+    min-width:100%;
+    position: relative;
+    min-height:auto;
+    flex: 1;
+    .num-checked {
+        // position: absolute;
+        position: relative;
+        justify-content: space-between;
+      
+        // background-color: #fff;
+        // bottom: 30px;
+       padding: 0px 18px;
+       gap: 5px;
+    
+       img{
+      max-width:12px;
+       }
+       
+       
+        .message-log{
+            color:rgb(107, 15, 15);
+            // color: rgb(14, 218, 14);
+            font-size: 10px;
+            font-weight: 600;
+        }
+    }
+  
+    .input_field{
+        position: relative;
+        left: 0;
+       
+    }
+    .checkbox-section{
+        top: 0;
+        position: relative;
+        // background-color: #fff;
+      
+        left: 0;
+        width: 100%;
+        label{
+            padding: 5px 10px;
+            position: relative;
+            width: 300px;
+            // background-color: #ad0b0b;
+        }
+    }
+}
+
+
+
+            .--btn{
+                position: relative;
+                padding: 5px;
+            }
+            ::placeholder {
+                color: rgb(196, 188, 188);
+            }
+        }
+
+        .method2 {
+            height: 55%;
+            position: relative;
+
+            ::placeholder {
+                color: #e7c6c8;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+            .input_field {
+                background-color: rgba(82, 137, 199, .5);
+                color: rgb(62, 58, 58);
+                font-size: large;
+                font-weight: 500;
+                padding: 20px;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                margin: 5px;
+            }
+
+            .checkbox-section {
+
+                // background-color: #fff;
+                input {
+                    transform: scale(1.1);
+                }
+
+                .font1 {
+                    font-size: 1rem;
+                    // color: red;
+                }
+            }
+
+            .btn {
+                position: absolute;
+                left: 23%;
+                margin: 0;
+                bottom: 3px;
+                text-align: center;
+            }
+
+        }
+
+        // end mid-wrapper css----------------------->
+
+
+
+        //bottom-wraper-css--------------------------->
+
+        .bottom_wrapper {
+            flex-direction: column;
+            display: flex;
+            justify-items: center;
+
+            align-items: center;
+            position: relative;
+            height: 15%;
+
+            div:first-child {
+                display: inline-flex;
+                cursor: pointer;
+                transition: .5s ease;
+
+                p {
+                    margin-top: 5px;
+                }
+
+
+            }
+
+            div:first-child:hover {
+                .icon {
+                    transform: translatex(0px);
+
+                }
+
+
+
+            }
+
+            .icon {
+                width: 20px;
+                transition: 1s ease;
+                transform: translatex(-5px);
+                padding-top: 5px;
+                font-size: 20px;
+            }
+
+            .link:hover {
+                text-decoration: none;
+                color: rgb(196, 199, 34);
+                border-bottom: 1px solid gray;
+            }
+
+
+        }
+
+        // end bottom-wrapper-css ------------------->
+    }
+
+
+
+
+
+
+
+    .toast {
+
+        position: absolute;
+        top: 20px;
+
+        @include sm {
+            left: 10%;
+            width: 80%;
+        }
+    }
+
+    .notificatiion {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        background-color: #be3892;
+        width: 300px;
+        height: 45px;
+        top: -50px;
+        transition: all 3s ease;
+
+    }
+
+
+    @include sm {
+        background: linear-gradient(to right, #654ea3, #eaafc8);
+        // padding: 20px;
+        width: 100%;
+        height: calc(100vh - 140px);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// user password method  css

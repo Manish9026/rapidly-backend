@@ -1,0 +1,88 @@
+.card_container:hover .card-options {
+  z-index: 5;
+  transition: all 0.5s ease;
+  transform: translatex(0px);
+}
+
+.card_container {
+  display: flex;
+  position: relative;
+  height: 85%;
+  width: 200px;
+  margin: 20px;
+  box-shadow: 5px 0px 10px 2px rgb(226, 225, 225);
+}
+@media screen and (max-width: 630px) {
+  .card_container {
+    width: 220px;
+    border-radius: 5px;
+  }
+}
+.card_container .card-options {
+  position: absolute;
+  display: flex;
+  right: 0;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  height: 120px;
+  transform: translatex(10px);
+  z-index: -20;
+  transition: all 1s ease;
+}
+.card_container .card-options li {
+  list-style: none;
+  text-align: center;
+  color: rgb(26, 25, 25);
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 25px;
+  border: 0.1px solid rgb(234, 231, 231);
+  border-radius: 5px;
+  height: 25px;
+  background-color: #fff;
+  transition: all 1ms ease;
+}
+.card_container .card-options li:hover {
+  background-color: rgb(48, 47, 47);
+  padding: 2px;
+  color: white;
+  border-radius: 5px;
+}
+.card_container .link_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card_container .link_container .img_section {
+  height: 70%;
+  padding: 5px;
+}
+.card_container .link_container .img_section img {
+  border-radius: 10px 10px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.card_container .link_container .image_brand {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+}
+.card_container .link_container .card_footer {
+  margin: 8px;
+}
+.card_container .link_container .card_footer .product_name {
+  text-transform: capitalize;
+  color: bisque;
+}
+.card_container .link_container .card_footer .product_price {
+  width: 90%;
+}
+.card_container .link_container .card_footer .product_discount {
+  text-align: center;
+  margin-top: 5px;
+}/*# sourceMappingURL=Card.css.map */

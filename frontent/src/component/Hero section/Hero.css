@@ -1,0 +1,16 @@
+.hero_section {
+  width: 100%;
+  height: 350px;
+  background-color: rebeccapurple;
+}
+@media screen and (max-width: 630px) {
+  .hero_section {
+    height: 200px;
+  }
+}
+
+.Banner_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=Hero.css.map */

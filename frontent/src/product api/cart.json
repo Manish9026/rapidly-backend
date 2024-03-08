@@ -1,0 +1,32 @@
+[
+    { "id":1,
+        "image":"https://m.media-amazon.com/images/I/71yKHVhAv5L._AC_AA180_.jpg",
+        "price":"47,400",
+        "brand_name":"hp",
+        "category":"laptop"
+    },
+    { "id":2,
+    "image":"https://m.media-amazon.com/images/I/71SsTqzf8ML._AC_AA180_.jpg",
+    "price":"47,400",
+    "brand_name":"hp",
+    "category":"laptop"
+},
+{ "id":3,
+"image":"https://m.media-amazon.com/images/I/51DbajD0z7L._AC_AA220_.jpg",
+"price":"47,400",
+"brand_name":"hp",
+"category":"laptop"
+},
+{ "id":4,
+"image":"https://m.media-amazon.com/images/I/511wHXopiuL._SX679_.jpg",
+"price":"47,400",
+"brand_name":"hp",
+"category":"laptop"
+},
+{ "id":5,
+"image":"https://m.media-amazon.com/images/I/71yKHVhAv5L._AC_AA180_.jpg",
+"price":"47,400",
+"brand_name":"hp",
+"category":"laptop"
+}
+]

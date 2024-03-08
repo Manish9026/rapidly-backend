@@ -1,0 +1,110 @@
+.entry-section{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    form{position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       min-width: 500px;
+       background-color: #1f6af770;
+       border-radius: 10px;
+        justify-content: center;
+        padding: 40px 20px;
+        align-items: center;
+
+        .reset-btn{
+            /* position: absolute; */
+            background-color: #d0181b;
+            max-width: 100px;
+            min-width: 200px;
+            cursor: pointer;
+            color: azure;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+        input{
+          min-width: 300px;
+           max-width: 100%;
+           height: 30px;
+           border-radius:5px;
+           border: none;
+           padding: 0px 20px;
+            
+        }
+        input:focus{
+            outline:3px solid rgb(45, 84, 203);
+        }
+        input[type=submit]{
+            background-color: #ea15ce;
+            max-width: 100px;
+            min-width: 200px;
+            cursor: pointer;
+            color: azure;
+        }
+    
+        .input-category-section{
+            display: flex;
+          width: 300px;
+            /* max-width: 100%; */
+           
+            /* background-color: #bb0606; */
+            input{
+ min-width:calc(100% - 40%);
+ border-radius: 5px 0px 0px 5px;
+            }
+            select{
+width:40%;
+border-radius: 0px 5px 5px 0px;
+            }
+        }
+
+        .image-input-section{
+            /* background-color: #9c2929; */
+            min-width: 300px;
+            max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .image-input{
+            input{
+                min-width:70%;
+                background-color: #89c620;
+                border-radius: 5px 0px 0px 5px;
+
+              
+            }
+            input:focus{
+                outline: none;
+            }
+            button{
+             width: 30%;
+             height: 30px;
+             border: none;
+             border-radius: 0px 5px 5px 0px;
+             cursor: pointer;
+
+
+            }
+          }
+
+          .upload-image-list{
+            display: flex;
+            flex-direction: column;
+            padding: 5px 20px;
+color: #4507ff;
+            border: 1px solid red;
+            border-radius: 5px;
+
+          }
+           
+        }
+    }
+
+  
+}

@@ -1,0 +1,152 @@
+@import '../../../css-configration/mixins.scss';
+
+
+//main card_container css start
+
+.card_container:hover{
+   .card-options{
+    z-index: 5;
+    transition: all .5s ease;
+transform: translatex(0px);
+        // background-color: #30b72d;
+    }
+
+}
+.card_container {
+    display: flex;
+    position: relative;
+    height:350px;
+    background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    width: 220px;
+    min-width: 200px;
+    margin: 20px 10px;
+    // box-shadow: 5px 0px 10px 2px rgb(226, 225, 225);
+    box-shadow: 4px 4px 4px -2px rgb(226, 225, 225);
+    border-radius: 10px;
+   
+
+
+    @include sm{
+        width: 220px;
+        border-radius: 5px;
+        // background-color: #74d11d;
+
+    }
+
+
+
+    .card-options{
+        position: absolute;
+        
+        display: flex;
+        right: 0;
+        gap: 5px;
+        padding: 10px;
+        border-radius: .5rem;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+        // background-color: rgba(70, 152, 228, 0.4);
+        
+        flex-direction:column ;
+
+        width:50px;
+        height:120px;
+        transform: translatex(10px);
+        z-index: -20;
+        transition: all 1s ease;
+
+       
+       
+   
+
+        li{
+            list-style: none;
+         text-align: center;
+            color: rgb(26, 25, 25);
+            font-weight: 100;
+            font-size: 1.2rem;
+            width: 25px;
+            border: .1px solid rgb(234, 231, 231);
+            border-radius: 5px;
+            height: 25px;
+            background-color: #fff;
+            transition: all 1ms ease;
+
+          
+        }  li:hover{
+                background-color: rgb(48, 47, 47);
+                padding: 2px;
+                color: white;
+                border-radius: 5px;
+                
+            }
+
+    }
+  
+
+    .link_container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+
+        .img_section {
+            height: 70%;
+            // max-height: 400px;
+           padding: 5px;
+
+
+            img {
+            border-radius: 10px 10px 0px 0px;
+                
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .image_brand {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+        }
+
+        .card_footer {
+            margin: 8px;
+
+            .product_name {
+
+                text-transform: capitalize;
+                color: bisque;
+            }
+
+            .product_price {
+                width: 90%;
+
+            }
+
+            .product_discount {
+                text-align: center;
+                margin-top: 5px;
+
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
+//main card_container css end

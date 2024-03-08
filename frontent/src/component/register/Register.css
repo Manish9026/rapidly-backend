@@ -1,0 +1,254 @@
+.register-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 630px) {
+  .register-section {
+    height: calc(100vh - 140px);
+  }
+}
+
+.register-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  background-color: aqua;
+  height: 500px;
+}
+@media screen and (max-width: 630px) {
+  .register-container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+.register-container .left-side {
+  position: relative;
+  display: flex;
+  width: 45%;
+  background-color: blue;
+  background-image: radial-gradient(to right, red, blue);
+  height: 100%;
+}
+@media screen and (max-width: 630px) {
+  .register-container .left-side {
+    display: none;
+    background-color: green;
+  }
+}
+.register-container .left-side .image-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.register-container .left-side .discripstion-section {
+  position: absolute;
+  bottom: 5px;
+}
+.register-container .left-side .discripstion-section p {
+  padding: 0px 10px;
+}
+.register-container .right-side {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 55%;
+  height: 100%;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #373B44, #4286f4);
+  }
+}
+.register-container .right-side .register-page-heading {
+  color: red;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.register-container .right-side .top {
+  position: relative;
+  top: 10px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: grey; */
+}
+.register-container .right-side .top .input-field {
+  border-radius: 5px;
+  text-transform: lowercase;
+  margin: 5px;
+  font-size: 15px;
+  outline: red;
+  padding: 0px 10px;
+  height: 40px;
+  width: 250px;
+}
+.register-container .right-side .top .number-section {
+  height: 40px;
+  display: flex;
+  margin: 5px;
+  position: relative;
+  margin: 0;
+  width: 250px;
+}
+.register-container .right-side .top .number-section input {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  padding-left: 20px;
+  border-radius: 0px 5px 5px 0px;
+  width: 190px;
+}
+.register-container .right-side .top .number-section .country-code {
+  border-radius: 5px 0px 0px 5px;
+  height: 100%;
+  font-size: 18px;
+  border-right: 1px solid grey;
+  width: 60px;
+  position: relative;
+}
+.register-container .right-side .bottom {
+  position: relative;
+  height: 100%;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom {
+    height: 80px;
+    padding-bottom: 10px;
+  }
+}
+.register-container .right-side .bottom .link-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.register-container .right-side .bottom .link-section .login-link {
+  position: absolute;
+  bottom: 15px;
+  justify-content: flex-start;
+}
+.register-container .right-side .bottom .link-section .login-link :hover {
+  color: rgb(91, 197, 30);
+  font: 50px;
+}
+.register-container .right-side .bottom .link-section .login-link .link {
+  color: red;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom .link-section .login-link {
+    top: 50px;
+  }
+}
+.register-container .right-side .bottom .link-section .failed {
+  border: rgb(228, 21, 21) 2px double;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom .link-section .failed {
+    box-shadow: 0px 0px 5px 3px rgb(211, 34, 7);
+  }
+}
+.register-container .right-side .bottom .link-section .success {
+  border: rgb(9, 152, 7) 2px double;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom .link-section .success {
+    box-shadow: 0px 0px 4px 2px green;
+  }
+}
+.register-container .right-side .bottom .link-section .message-section {
+  position: absolute;
+  top: 20px;
+  width: 70%;
+  background-color: rgb(189, 174, 174);
+  height: 30px;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom .link-section .message-section {
+    border-radius: 10px;
+    padding-left: 2px;
+    width: 80%;
+    top: 5px;
+  }
+}
+.register-container .right-side .bottom .link-section .message-section .icon_success {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: rgb(21, 123, 21);
+}
+.register-container .right-side .bottom .link-section .message-section .icon_failed {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: rgb(244, 77, 11);
+}
+.register-container .right-side .bottom .link-section .message-section .message {
+  display: flex;
+  background-color: rgba(204, 221, 204, 0.6);
+  height: 100%;
+  align-items: center;
+  padding-left: 20px;
+  width: 90%;
+}
+@media screen and (max-width: 630px) {
+  .register-container .right-side .bottom .link-section .message-section .message {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+.submit-btn {
+  position: relative;
+  top: 10px;
+  width: 150px;
+}
+
+::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.verification-text {
+  display: none;
+  font-size: 12px;
+  color: var(--red);
+  /* padding-left: 10px; */
+}
+
+h6 {
+  position: relative;
+  left: -80px;
+  font-size: 0.9rem;
+  color: var(--blue);
+  text-transform: capitalize;
+  text-align: start;
+}
+
+#none {
+  display: none;
+}
+
+#block {
+  display: flex;
+}/*# sourceMappingURL=Register.css.map */

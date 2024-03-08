@@ -1,0 +1,151 @@
+@import "../../../css-configration/mixins.scss";
+
+
+
+
+
+.product-detail {
+    width: 100%;
+    background-color: #9cc4d3;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .icon{
+        margin-top: 1px;
+        font-size: 15px;
+    }
+
+    img {
+        padding: 5px;
+        // background-color: #debdbd;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .product-content {
+        padding: 10px 20px;
+        // background-color: #e99b9b;
+       width: 500px;
+        li{
+            gap: 5px;
+        }
+
+    }
+
+    .control-bar {
+        display: flex;
+        gap: 20px;
+        padding: 10px 0px;
+
+        .quantity-section {
+            display: inline-flex;
+            gap: 5px;
+
+            span {
+                padding: 2px 30px;
+                border-radius: 10px;
+                outline: .01px blue solid;
+                border: 1px solid gray;
+            }
+
+            button {
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                // padding: 05px 10px;
+                border-radius: 50%;
+                background-color: #baafaf;
+            }
+        }
+
+        .remove-btn {
+
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(71, 71, 119);
+        }
+
+    }
+
+
+@include sm{
+    .product-content{
+        width: 300px;
+    }
+}
+
+}
+.card-section{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(122, 122, 240);
+    justify-content: flex-start;
+
+   
+    
+     
+
+    // @include {
+    //     background-color: #dc2020;
+    // }
+
+    .left{ position: relative;
+        padding: 10px;
+        left: 20px;
+        background-color: #3fcdf4;
+        height: 80%;
+        width: 200px;
+        // padding: 20px;
+        margin: 10px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+    }
+
+    .right{position: relative;
+    
+        background-color: #831515;
+       width: 380px;
+        height: 80%;
+        margin: 10px;
+        .product-specification{
+            padding: 30px 20px;
+        }
+
+        .product-price{
+            // background-color: #41cb22;
+            width: 80%;
+            height: fit-content;
+            
+            p{
+            display: inline;
+            padding: 0px 20px; 
+       }
+            
+            
+            select{
+            border-radius: 5px;
+            width: 60px;
+            height: 100%;
+            font-size:.9rem;
+            padding: 5px 5px;
+        }
+        }
+     
+       
+       
+
+        .product-brand{
+            padding: 30px 20px;
+
+        }
+    }
+}
