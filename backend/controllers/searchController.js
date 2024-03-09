@@ -7,8 +7,9 @@ const getProductData=async(req,res)=>{
     try {
         
         const {searchData ,skip,limit}=req.query
+        // console.log(searchData,);
         const match= await productsModel.find({category:searchData}).skip(parseInt(skip)).limit(parseInt(limit))
-     
+     console.log(match,"hello");
         
             if(match.length!=0){
                
