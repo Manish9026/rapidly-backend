@@ -18,7 +18,7 @@ const app=express();
 let Url=process.env.SERVER_BASE_URL;
 
 app.use(Cors({
-    origin:[Url,"http://127.0.0.1:3000","http://localhost:3000","http://localhost:3002"],
+    origin:[Url,"https://rapidly-tau.vercel.app/","http://localhost:3000","http://localhost:3002"],
     methods:["POST","GET","DELETE","PATCH"],
     credentials:true
 }))
