@@ -4,6 +4,8 @@ import { todaydealModel } from "../models/todaydeal.js";
 
 class Deals {
     static homeDeal = async (req, res) => {
+
+       console.log( process.env.SERVER_BASE_URL)
         console.log(req.query.prdType);
         const { prdType } = req.query;
         //    res.cookie('jwt',"manish maurya")
