@@ -10,9 +10,9 @@ const DB_connection=(uri)=>{
 })
 }
 
-const atlasDBConn= async()=>{
-//  uri = "mongodb+srv://Manish902:8009@cluster0.n8bm9rb.mongodb.net/e-commerce?retryWrites=true&w=majority&appName=Cluster0";
- let uri='mongodb+srv://Manish902:8009@cluster0.n8bm9rb.mongodb.net/e-commerce?retryWrites=true&w=majority'
+const atlasDBConn= async(uri)=>{
+// //  uri = "mongodb+srv://Manish902:8009@cluster0.n8bm9rb.mongodb.net/e-commerce?retryWrites=true&w=majority&appName=Cluster0";
+//  let uri='mongodb+srv://Manish902:8009@cluster0.n8bm9rb.mongodb.net/e-commerce?retryWrites=true&w=majority'
  await mongoose.connect(uri,{
         useNewUrlParser:true,useUnifiedTopology:true
     }).then((res)=>{console.log("connect successfully");

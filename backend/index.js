@@ -28,9 +28,9 @@ app.use(cookieParser());
 
 
 // database connection
-const url=process.env.SERVER_DB_URL;
-DB_connection(url);
-// const conn=atlasDBConn();
+const url=process.env.MONGO_DB ;
+// DB_connection(url);
+atlasDBConn(url);
 const port=process.env.PORT;
 
 app.get("/",(req,res)=>{
