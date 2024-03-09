@@ -20,7 +20,7 @@ let Url=process.env.SERVER_BASE_URL;
 app.use(Cors({
     origin:[Url,"https://rapidly-backend.vercel.app/"],
     methods:["POST","GET","DELETE","PATCH"],
-    credentials:true
+    // credentials:true
 }))
 app.use(express.json());
 app.use(cookieParser());
