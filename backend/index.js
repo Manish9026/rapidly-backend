@@ -18,7 +18,7 @@ const app=express();
 let Url=process.env.SERVER_BASE_URL;
 
 app.use(Cors({
-    origin:[Url,"https://rapidly-backend.vercel.app/"],
+    origin:Url,
     methods:["POST","GET","DELETE","PATCH"],
     // credentials:true
 }))
