@@ -91,12 +91,18 @@ case "loginWithNum":  try{
 
              await this.createToken(userMatch.email, userMatch._id);
             // console.log(Token)
-            res.cookie('jwt1', this.Token, { expire: 36000 + Date.now() }).send({
+            res.cookie('jwt1', this.Token,{
+                sameSite: 'None',
+                secure: true,
+                httpOnly: true ,
+                expires: new Date(Date.now() + 3600000)
+              }).send({
                 'status': 'success',
                 'message': 'successfully login',
 
 
             })
+            
 
         }
         else {

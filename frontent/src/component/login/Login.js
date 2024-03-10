@@ -92,7 +92,7 @@ const Login = () => {
         else {
 
           // await dispatch(getlogin(formData));
-          axios.post("/api/login?type=loginWithNum", formData).then((res) => {
+          axios.post("/api/login?type=loginWithNum", formData,{withCredentials:true}).then((res) => {
 
             if (res.data.status == "success") {
               dispatch(userVerifier());
