@@ -195,7 +195,12 @@ case "loginWithNum":  try{
 
     static userLogout=async(req,res)=>{
         try {
-            res.clearCookie('jwt1')
+            // res.clearCookie('jwt1',)
+
+            res.clearCookie('jwt1', { 
+                sameSite: 'None',
+                secure: true
+            });
             res.send({
                 status:"failed",
                 massage:"cookie successfully deleted"
